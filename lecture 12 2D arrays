@@ -1,0 +1,14 @@
+# row-wise-traversal
+Given a matrix, ‘A’ of size ‘N’ * ‘M’, you must traverse the matrix row-wise.  You must return an integer array of size ‘N’ * ‘M’ denoting the row-wise traversal of the matrix.
+    public static int[] printRowWise(int [][]a) {
+        // Write your code here
+         int arr[]=new int [a.length*a[a.length-1].length];
+        int k=0;
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
+                arr[k]=a[i][j];
+                k++;
+            }
+        }
+return arr;
+    }
